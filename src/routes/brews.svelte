@@ -41,6 +41,10 @@
 <style>
 	/* brew selector */
 
+	* {
+		color: var(--text1);
+	}
+
 	.brewSelector {
 		padding: 1rem 0;
 	}

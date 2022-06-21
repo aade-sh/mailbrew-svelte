@@ -30,6 +30,7 @@
 		justify-content: space-around;
 		padding: 0.4rem 0;
 		border-bottom: var(--border-size-1) solid var(--gray-3);
+		color: var(--text1);
 	}
 	ul {
 		display: flex;

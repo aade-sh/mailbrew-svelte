@@ -20,7 +20,7 @@
 <style>
 	button {
 		--dimension: 1.5rem;
-		--normal-bg-color: var(--gray-3);
+		--normal-bg-color: var(--fill-gray);
 		--hover-bg-color: var(--gray-5);
 
 		background-color: var(--normal-bg-color);
@@ -34,6 +34,7 @@
 
 	button > p {
 		font-size: var(--font-size-0);
+		color: var(--text1);
 	}
 
 	button > .icon {
