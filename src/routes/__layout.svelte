@@ -3,4 +3,14 @@
 </script>
 
 <Header />
-<slot />
+<main>
+	<slot />
+</main>
+
+<style>
+	main {
+		margin: 0 auto;
+		display: grid;
+		place-items: center;
+	}
+</style>
