@@ -28,12 +28,12 @@
 <style>
 	section {
 		display: flex;
-		padding: 0.5rem 1rem;
+		padding: var(--size-2) var(--size-3);
 		position: relative;
 	}
 
 	section > .spacer {
-		width: 1rem;
+		width: var(--size-3);
 	}
 
 	.tagTabs {
@@ -51,6 +51,6 @@
 	}
 
 	.tagTabs button {
-		padding: 0.2rem 0.4rem;
+		padding: var(--size-1) var(--size-2);
 	}
 </style>

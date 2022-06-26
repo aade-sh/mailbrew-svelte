@@ -28,7 +28,7 @@
 	nav {
 		display: flex;
 		justify-content: space-around;
-		padding: 0.4rem 0;
+		padding: var(--size-2) 0;
 		border-bottom: var(--border-size-1) solid var(--gray-3);
 		color: var(--text1);
 	}
@@ -43,7 +43,7 @@
 	li a {
 		display: flex;
 		align-items: center;
-		padding: 0.4rem 0.4rem;
+		padding: var(--size-2);
 		text-decoration: none;
 		color: inherit;
 		font-weight: var(--font-weight-4);
@@ -57,11 +57,11 @@
 	}
 
 	li .spacer {
-		width: 0.2rem;
+		width: var(--size-1);
 	}
 
 	li img {
-		height: 15px;
-		width: 15px;
+		height: var(--size-3);
+		width: var(--size-3);
 	}
 </style>

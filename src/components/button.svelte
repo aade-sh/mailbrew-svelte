@@ -19,7 +19,7 @@
 
 <style>
 	button {
-		--dimension: 1.5rem;
+		--dimension: var(--size-5);
 		--normal-bg-color: var(--fill-gray);
 		--hover-bg-color: var(--gray-5);
 
@@ -38,8 +38,8 @@
 	}
 
 	button > .icon {
-		height: 1rem;
-		width: 1rem;
+		height: var(--size-3);
+		width: var(--size-3);
 	}
 
 	.pill {
@@ -50,7 +50,7 @@
 	}
 
 	.pill > .spacer {
-		width: 4px;
+		width: var(--size-1);
 	}
 
 	.pill::before {

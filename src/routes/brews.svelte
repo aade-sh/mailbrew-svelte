@@ -46,12 +46,12 @@
 	}
 
 	.brewSelector {
-		padding: 1rem 0;
+		padding: var(--size-3) 0;
 	}
 
 	.brewSelector > ul {
 		display: flex;
-		gap: 1rem;
+		gap: var(--size-3);
 		align-items: stretch;
 	}
 
@@ -60,7 +60,7 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		padding: 0.55rem;
+		padding: var(--size-2);
 
 		border: var(--border-size-1) solid transparent;
 		border-radius: var(--border-size-3);
@@ -72,21 +72,21 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		gap: 1rem;
+		gap: var(--size-3);
 	}
 	.brewOptions li {
 		display: flex;
-		gap: 1rem;
+		gap: var(--size-3);
 	}
 
 	.issuePaginator {
 		display: flex;
 		align-items: center;
-		gap: 0.5rem;
+		gap: var(--size-2);
 	}
 
 	.issuePaginator .paginatorButton {
-		height: 1.5rem;
-		width: 1.5rem;
+		height: var(--size-5);
+		width: var(--size-5);
 	}
 </style>
