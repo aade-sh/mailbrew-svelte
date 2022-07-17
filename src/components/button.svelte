@@ -1,17 +1,20 @@
 <script lang="ts">
 	export let text: string = '';
-	export let imageSource: string;
 	export let imageAlt: string;
 	export let type: 'pill' | 'circle' | 'oblong' = 'circle';
 </script>
 
 {#if type === 'circle'}
 	<button class="round">
-		<img src={imageSource} alt={imageAlt} class="icon" />
+		<span class="icon">
+			<slot name="icon" />
+		</span>
 	</button>
 {:else if type === 'pill'}
 	<button class="pill">
-		<img src={imageSource} alt={imageAlt} class="icon" />
+		<span class="icon" aria-hidden="true">
+			<slot name="icon" />
+		</span>
 		<div class="spacer" />
 		<p>{text}</p>
 	</button>
@@ -20,8 +23,8 @@
 <style>
 	button {
 		--dimension: var(--size-5);
-		--normal-bg-color: var(--fill-gray);
-		--hover-bg-color: var(--gray-5);
+		--normal-bg-color: var(--bg2);
+		--hover-bg-color: var(--bg1);
 
 		background-color: var(--normal-bg-color);
 		position: relative;
@@ -38,8 +41,13 @@
 	}
 
 	button > .icon {
+		display: block;
 		height: var(--size-3);
 		width: var(--size-3);
+	}
+
+	.icon {
+		color: var(--text1);
 	}
 
 	.pill {

@@ -12,6 +12,9 @@
 		--text1: var(--gray-8);
 		--text2: var(--gray-7);
 
+		--bg1: var(--gray-3);
+		--bg2: var(--gray-1);
+
 		--fill-gray: var(--gray-2);
 	}
 
@@ -19,6 +22,9 @@
 		html {
 			--text1: var(--gray-1);
 			--text2: var(--gray-3);
+
+			--bg1: var(--gray-7);
+			--bg2: var(--gray-8);
 
 			--fill-gray: var(--gray-8);
 		}
